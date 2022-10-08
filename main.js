@@ -17,7 +17,7 @@ function handleSlideBtnClick(e) {
     slideContainer.dispatchEvent(new Event("sliderMove"));
 }
 
-// remove/add attirubte function
+// remove/add attribute function
 const removeDisabledAttribute = (els) => els.forEach(el => el.removeAttribute('disabled'));
 const addDisabledAttribute = (els) => els.forEach(el => el.setAttribute('disabled', 'true'));
 
@@ -71,7 +71,7 @@ const contactBtnOptions = {
     Thank you!
     </span>
     <span class="uppercase tracking-wide">
-    ✌️
+    🧑‍🎨
     </span>`,
 };
 
@@ -90,14 +90,14 @@ async function handleFormSubmit(e) {
 contactForm.addEventListener('submit', handleFormSubmit);
 
 // FADE UP OBSERVER //
-function fadeUpObserverCallback(elsToWatch){
+function fadeUpObserverCallback(elsToWatch) {
     elsToWatch.forEach((el) => {
-        if(el.isIntersecting){
+        if (el.isIntersecting) {
             el.target.classList.add('faded');
             fadeUpObserver.unobserve(el.target);
             el.target.addEventListener("transitionend", () => {
                 el.target.classList.remove('fade-up', 'faded');
-            }, { once: true })
+            }, {once: true})
         }
     })
 }

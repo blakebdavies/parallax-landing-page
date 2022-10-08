@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="color-scheme" content="dark"/>
-    <title>Parallax Landing Page</title>
+    <title>Van Gogh Experience</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
@@ -15,45 +15,42 @@
     <nav class="grid place-items-center absolute w-full top-0 z-50 drop-shadow-text-sm" aria-label="Primary Navigation">
         <a href="/" aria-label="Go Home"
            class="p-1 m-4 focus:outline-none focus-visible:ring-4 ring-accent rounded-full transition-shadow">
-            <svg width="100" height="100" fill="#fff" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#fff" viewBox="0 0 256 256">
                 <rect width="256" height="256" fill="none"></rect>
-                <circle cx="128" cy="128" r="96" fill="none" stroke="#fff" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="16"></circle>
-                <path d="M214.2,170.4,159.9,137a7.2,7.2,0,0,0-3.1-1.1l-22.9-3.1a7.8,7.8,0,0,0-8.3,4.7l-13.7,30.7a8,8,0,0,0,1.4,8.7l18.8,20.3a8.2,8.2,0,0,1,2,7L130.2,224"
+                <path d="M221.6,149.4a96.2,96.2,0,0,0,2.4-22.2c-.4-52.9-44.2-95.7-97-95.2A96,96,0,0,0,96,218.5a23.9,23.9,0,0,0,32-22.6V192a23.9,23.9,0,0,1,24-24h46.2A24,24,0,0,0,221.6,149.4Z"
                       fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
-                <path d="M65,55.6,56,76.8a8,8,0,0,0-.1,5.9l11.5,30.6a7.9,7.9,0,0,0,5.8,5.1L94.6,123a7.8,7.8,0,0,1,5.5,4.3l3.8,7.9a8.2,8.2,0,0,0,7.2,4.5h13.5"
-                      fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
-                <path d="M152.5,35.1l9.3,16.8a8.1,8.1,0,0,1-1.6,9.8L133.3,86a7.2,7.2,0,0,1-1.5,1.1l-12.3,6.8a8.6,8.6,0,0,1-3.8,1H94.3a8.1,8.1,0,0,0-7.4,4.9l-8.3,19.7"
-                      fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                <circle cx="128" cy="76" r="12"></circle>
+                <circle cx="83" cy="102" r="12"></circle>
+                <circle cx="83" cy="154" r="12"></circle>
+                <circle cx="173" cy="102" r="12"></circle>
             </svg>
         </a>
     </nav>
     <header class="min-h-screen flex flex-col justify-evenly items-center relative preserve-3d">
-        <div class="absolute bg-gradient-to-b inset-0 bottom-3/4 from-accent to-transparent"></div>
+        <div class="absolute bg-gradient-to-b inset-0 bottom-3/4 from-accent/30 to-transparent"></div>
         <div class="absolute bg-gradient-to-t inset-0 top-bottom-32 from-bkg/80 to-transparent distance-1"></div>
         <img
                 sizes="(min-width:500px) 480w, 650w, 800w, 1300w"
-                srcset="./images/hero-xs.jpeg 480w, ./images/hero-sm.jpeg 650w, ./images/hero-md.jpeg 800w, ./images/hero-lg.jpeg 1300w"
+                srcset="./images/hero-xs.png 480w, ./images/hero-sm.png 650w, ./images/hero-md.png 800w, ./images/hero-lg.png 1300w"
                 class="absolute h-full w-full -z-20 object-cover object-center distance-1"
                 src="./images/hero.jpeg"
                 aria-hidden="true"
         />
         <h1 class="text-5xl text-center font-bold text-white tracking-wide py-12 drop-shadow-text-sm lg:drop-shadow-text-lg distance-2">
-            Unique Trips for <br/>
-            Adventurous <br/>
-            Travelers
+            Discover the Life <br/>
+            and Work of <br/>
+            Vincent van Gogh
         </h1>
         <a href="#contact-form"
            class="bg-accent text-bkg font-medium py-3 px-8 rounded-full border border-bkg focus:outline-none focus-visible:ring-4 ring-accent ring-offset-bkg ring-offset-2 hover:bg-accent/90 flex space-x-2 drop-shadow-text-lg hover:drop-shadow-none transition-shadow items-center distance-2">
-            <span class="uppercase tracking-wide">Book a Trip</span>
+            <span class="uppercase tracking-wide">Sign Up for Tickets</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
                 <rect width="256" height="256" fill="none"></rect>
-                <polyline points="96 184 32 200 32 56 96 40" fill="none" stroke="currentColor" stroke-linecap="round"
-                          stroke-linejoin="round" stroke-width="16"></polyline>
-                <polygon points="160 216 96 184 96 40 160 72 160 216" fill="none" stroke="currentColor"
-                         stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polygon>
-                <polyline points="160 72 224 56 224 200 160 216" fill="none" stroke="currentColor"
-                          stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                <line x1="96" y1="56" x2="96" y2="200" fill="none" stroke="currentColor" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="16"></line>
+                <path d="M24,167.2a7.9,7.9,0,0,1,6.4-7.8,32.1,32.1,0,0,0,0-62.8A7.9,7.9,0,0,1,24,88.8V64a8,8,0,0,1,8-8H224a8,8,0,0,1,8,8V88.8a7.9,7.9,0,0,1-6.4,7.8,32.1,32.1,0,0,0,0,62.8,7.9,7.9,0,0,1,6.4,7.8V192a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8Z"
+                      fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="16"></path>
             </svg>
         </a>
 
@@ -61,24 +58,27 @@
     <main class="relative mt-16 sm:mt-24 lg:mt-40 pb-16 -mb-16 grid gap-16 sm:gap-24 lg:gap-40 overflow-hidden">
         <section aria-labelledby="headline" class="container grid gap-4 text-center max-w-prose fade-up">
             <div>
-                <small class="tracking-widest text-accent uppercase drop-shadow-text-sm">What Dreams Are Made Of</small>
-                <h2 id="headline" class="text-3xl font-bold tracking-wide drop-shadow-text-md">Trips for Explorers</h2>
+                <small class="tracking-widest text-accent uppercase drop-shadow-text-sm">Inspiring the world</small>
+                <h2 id="headline" class="text-3xl font-bold tracking-wide drop-shadow-text-md">The Legacy of a
+                    Struggling Artist</h2>
             </div>
-            <p class="text-muted drop-shadow-text-sm">We find once-in-a-lifetime locations and reserve them for
-                travelers full of adventure. Calling all explorers and extremists to the trip of their dreams in the
-                most exotic locations all around the globe.</p>
+            <p class="text-muted drop-shadow-text-sm">Van Gogh experienced life and the world intensely and wanted his
+                art to portray the great themes of life, such as anxiety, suffering, love and hope. You follow the
+                on-going search of an artist who was constantly trying to improve himself.</p>
         </section>
         <section aria-labelledby="slider" class="container grid gap-4 text-center sm:text-left fade-up">
             <div class="relative">
                 <div class="hidden sm:block absolute w-8 bg-accent/10 -left-4 h-full"></div>
                 <div>
-                    <small class="tracking-widest text-accent uppercase drop-shadow-text-sm">Off The Beaten Path</small>
-                    <h2 id="slider" class="text-3xl font-bold tracking-wide drop-shadow-text-md">Places without
-                        People</h2>
+                    <small class="tracking-widest text-accent uppercase drop-shadow-text-sm">What's On</small>
+                    <h2 id="slider" class="text-3xl font-bold tracking-wide drop-shadow-text-md">Step into Van Gogh's
+                        world</h2>
                 </div>
                 <div class="flex flex-wrap sm:flex-nowrap justify-center sm:justify-between items-center space-x-4 space-y-4">
-                    <p class="text-muted max-w-2xl drop-shadow-text-sm">We specialize in finding places no one else
-                        knows about. Here are a few of our favorite spots for true adventurers.</p>
+                    <p class="text-muted max-w-2xl drop-shadow-text-sm">What's on at the Van Gogh Experience? There's
+                        always
+                        plenty to discover: visit exhibitions and join activities, or discover how to enjoy the museum
+                        from home.</p>
                     <div class="flex space-x-4">
                         <button data-slideBtn id="prev" aria-label="show previous image"
                                 class="grid place-items-center bg-accent hover:bg-accent/90 rounded-full p-2 text-bkg focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg ring-accent disabled:bg-accent/20 disabled:text-accent"
@@ -115,52 +115,52 @@
             <div class="flex transition-transform duration-500" data-slideContainer>
                 <div class="relative w-full xs:w-auto flex-grow flex-shrink-0 xs:basis-96 pr-4" data-slide>
                     <img class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
-                         src="./images/slider-1.jpeg" alt="Ocean Wonders" loading="lazy"/>
+                         src="./images/slide-1.jpg" alt="Masterpieces" loading="lazy"/>
                     <p class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity">
-                        Ocean Wonders</p>
+                        Masterpieces</p>
                 </div>
                 <div class="relative w-full xs:w-auto flex-grow flex-shrink-0 xs:basis-96 pr-4" data-slide>
                     <img class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
-                         src="./images/slider-2.jpeg" alt="Waterfall Cave" loading="lazy"/>
+                         src="./images/slide-2.jpg" alt="Self-portraits" loading="lazy"/>
                     <p class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity">
-                        Waterfall Cave</p>
+                        Self-portraits</p>
                 </div>
                 <div class="relative w-full xs:w-auto flex-grow flex-shrink-0 xs:basis-96 pr-4" data-slide>
                     <img class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
-                         src="./images/slider-3.jpeg" alt="Rainbow Falls" loading="lazy"/>
+                         src="./images/slide-3.jpg" alt="Drawings from Paris" loading="lazy"/>
                     <p class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity">
-                        Rainbow Falls</p>
+                        Drawings from Paris</p>
                 </div>
                 <div class="relative w-full xs:w-auto flex-grow flex-shrink-0 xs:basis-96 pr-4" data-slide>
                     <img class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
-                         src="./images/slider-4.jpeg" alt="Canyon Peaks" loading="lazy"/>
+                         src="./images/slide-4.jpg" alt="Landscapes" loading="lazy"/>
                     <p class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity">
-                        Canyon Peaks</p>
+                        Landscapes</p>
                 </div>
                 <div class="relative w-full xs:w-auto flex-grow flex-shrink-0 xs:basis-96 pr-4" data-slide>
                     <img class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
-                         src="./images/slider-5.jpeg" alt="Mountain Inlet" loading="lazy"/>
+                         src="./images/slide-5.jpg" alt="Still Life" loading="lazy"/>
                     <p class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity">
-                        Mountain Inlet</p>
+                        Still Life</p>
                 </div>
                 <div class="relative w-full xs:w-auto flex-grow flex-shrink-0 xs:basis-96 pr-4" data-slide>
                     <img class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
                          loading="lazy"
-                         src="./images/slider-6.jpeg" alt="Angel Cliffs"/>
+                         src="./images/slide-6.jpg" alt="Sunflowers"/>
                     <p class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity">
-                        Angel Cliffs</p>
+                        Sunflowers</p>
                 </div>
                 <div class="relative w-full xs:w-auto flex-grow flex-shrink-0 xs:basis-96 pr-4" data-slide>
                     <img class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
-                         src="./images/slider-7.jpeg" alt="Aurora Sound" loading="lazy"/>
+                         src="./images/slide-7.jpg" alt="Portraits" loading="lazy"/>
                     <p class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity">
-                        Aurora Sound</p>
+                        Portraits</p>
                 </div>
                 <div class="relative w-full xs:w-auto flex-grow flex-shrink-0 xs:basis-96" data-slide>
                     <img class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
-                         src="./images/slider-8.jpeg" alt="Icy Meadows" loading="lazy"/>
+                         src="./images/slide-8.jpg" alt="Immersive Experiences" loading="lazy"/>
                     <p class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity">
-                        Icy Meadows</p>
+                        Immersive Experiences</p>
                 </div>
             </div>
         </div>
@@ -170,11 +170,11 @@
             <div class="grid gap-4 text-center md:text-left grow md:flex-1 fade-up">
                 <div class="relative">
                     <div class="hidden md:block absolute w-8 bg-accent/10 -left-4 h-full"></div>
-                    <small class="tracking-widest text-accent uppercase">A globe of possibilities</small>
-                    <h2 id="map" class="text-3xl font-bold tracking-wide">Happy Travelers <br> the World Over</h2>
+                    <small class="tracking-widest text-accent uppercase">#1 Selling Show</small>
+                    <h2 id="map" class="text-3xl font-bold tracking-wide">Experience art <br> like never before</h2>
                 </div>
-                <p class="text-muted max-w-2xl">Don’t take our word for it! Thousands of adventurous travelers have
-                    enjoyed more than 250 exotic locations all over the globe!</p>
+                <p class="text-muted max-w-2xl">Don’t take our word for it! Thousands of creatively curious have
+                    enjoyed more than 50 immersive locations all over the globe!</p>
             </div>
         </section>
         <section aria-labelledby="cta" class="container grid gap-4 text-center max-w-prose fade-up">
@@ -182,7 +182,8 @@
                 <small class="tracking-widest text-accent uppercase">It’s Time to Explore</small>
                 <h2 id="cta" class="text-3xl font-bold tracking-wide">Get Hidden Locations</h2>
             </div>
-            <p class="text-muted max-w-2xl mx-auto">Not sure where to start? Drop us a line, and we’ll send you new
+            <p class="text-muted max-w-2xl mx-auto">Not sure where to start? Drop us a line, and we’ll send you one of
+                our unique
                 locations before they’re shown on our website.</p>
             <form id="contact-form"
                   class="border-4 border-accent rounded-full p-1 flex items-center justify-between max-w-md mx-auto">
@@ -208,23 +209,18 @@
     <footer class="border-t border-accent mt-16 sm:mt-24 lg:mt-40 py-6 sm:py-8 md:py-12">
         <div class="container flex flex-wrap md:justify-between items-center md:items-start gap-12">
             <div class="grid gap-2 grow basis-full md:basis-1/4">
-                <svg aria-label="nomad-logo" height="50" width="50" class="w-32 sm:w-48 lg:w-56" fill="#fff"
-                     viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff" viewBox="0 0 256 256">
                     <rect width="256" height="256" fill="none"></rect>
-                    <circle cx="128" cy="128" r="96" fill="none" stroke="#fff" stroke-linecap="round"
-                            stroke-linejoin="round" stroke-width="16"></circle>
-                    <path d="M214.2,170.4,159.9,137a7.2,7.2,0,0,0-3.1-1.1l-22.9-3.1a7.8,7.8,0,0,0-8.3,4.7l-13.7,30.7a8,8,0,0,0,1.4,8.7l18.8,20.3a8.2,8.2,0,0,1,2,7L130.2,224"
+                    <path d="M221.6,149.4a96.2,96.2,0,0,0,2.4-22.2c-.4-52.9-44.2-95.7-97-95.2A96,96,0,0,0,96,218.5a23.9,23.9,0,0,0,32-22.6V192a23.9,23.9,0,0,1,24-24h46.2A24,24,0,0,0,221.6,149.4Z"
                           fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
                           stroke-width="16"></path>
-                    <path d="M65,55.6,56,76.8a8,8,0,0,0-.1,5.9l11.5,30.6a7.9,7.9,0,0,0,5.8,5.1L94.6,123a7.8,7.8,0,0,1,5.5,4.3l3.8,7.9a8.2,8.2,0,0,0,7.2,4.5h13.5"
-                          fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
-                          stroke-width="16"></path>
-                    <path d="M152.5,35.1l9.3,16.8a8.1,8.1,0,0,1-1.6,9.8L133.3,86a7.2,7.2,0,0,1-1.5,1.1l-12.3,6.8a8.6,8.6,0,0,1-3.8,1H94.3a8.1,8.1,0,0,0-7.4,4.9l-8.3,19.7"
-                          fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
-                          stroke-width="16"></path>
+                    <circle cx="128" cy="76" r="12"></circle>
+                    <circle cx="83" cy="102" r="12"></circle>
+                    <circle cx="83" cy="154" r="12"></circle>
+                    <circle cx="173" cy="102" r="12"></circle>
                 </svg>
-                <p class="text-muted text-sm text-center md:text-left">We curate unique experiences <br>for the
-                    adventurous traveler.</p>
+                <p class="text-muted text-sm text-center md:text-left">We curate art unique experiences <br>for the
+                    creatively curious.</p>
             </div>
             <nav aria-label="Secondary navigation"
                  class="text-sm flex flex-col items-center sm:items-start sm:flex-row text-center sm:text-left gap-6 justify-between md:justify-around grow basis-full md:basis-1/2 mt-2">
