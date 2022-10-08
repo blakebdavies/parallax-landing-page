@@ -8,8 +8,8 @@ let currentIndex = 0;
 let isMoving = false;
 
 // btn handle function
-function handleSlideBtnClick(e){
-    if(isMoving) return;
+function handleSlideBtnClick(e) {
+    if (isMoving) return;
     isMoving = true;
     e.currentTarget.id === "prev"
         ? currentIndex--
@@ -41,7 +41,7 @@ document.querySelectorAll('[data-slide] img').forEach(img => img.ondragstart = (
 
 // intersection observer for slider
 const slideObserver = new IntersectionObserver((slide) => {
-    if(slide[0].isIntersecting){
+    if (slide[0].isIntersecting) {
         addDisabledAttribute([slideBtns[1]]);
     }
 }, {threshold: .75});
