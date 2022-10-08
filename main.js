@@ -54,7 +54,7 @@ const contactBtn = document.querySelector('#contact-btn');
 const contactInput = document.querySelector('#email');
 
 // fake sending email to api endpoint
-function postEmailToDatabase(email){
+function postEmailToDatabase(email) {
     console.info(`Your email is ${email}`);
     return new Promise(resolve => setTimeout(resolve, 2000));
 }
@@ -77,7 +77,7 @@ const contactBtnOptions = {
 };
 
 
-async function handleFormSubmit(e){
+async function handleFormSubmit(e) {
     e.preventDefault();
     addDisabledAttribute([contactForm, contactBtn]);
     contactBtn.innerHTML = contactBtnOptions.pending;
