@@ -8,7 +8,7 @@
   <h5>Installation</h5>
  <p><code>npm install</code></p>
   <h5>To Start Server</h5>
- <p><code>npm start</code></p>
+ <p><code>npm run dev</code></p>
   <h2> Technologies and Concepts</h2>
  <ul>
   <li>Vite.js</li>
